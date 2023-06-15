@@ -18,3 +18,25 @@ export const StatusEnum = enumer([
 // 触发提示
 StatusEnum.
  ```
+
+
+ ### 准备
+ 
+ ```
+ npm install -g vsce
+
+ vsce package
+ // 这里如果提示了README有问题可以换名打包，不要README
+
+vsce create-publisher
+// 如果没有账户在这一步请先申请微软开发者账户、拿到token 进行绑定账号
+ vsce publish 
+ // 这里可能401，可换https://marketplace.visualstudio.com/manage上直接上传
+ ```
+### 开发
+```
+mac: fn + F5
+window: f5
+```
+
+
